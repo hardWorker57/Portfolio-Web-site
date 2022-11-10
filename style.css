@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -20,12 +20,8 @@ header {
 .container {
   max-width: 80%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .add-header-container {
@@ -39,17 +35,11 @@ header {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .header-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 50%;
   gap: 0.6em;
@@ -57,11 +47,7 @@ header {
 
 .header-right {
   width: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
 }
 
@@ -73,7 +59,6 @@ header {
   border-radius: 10px;
   cursor: pointer;
   z-index: 2;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -85,7 +70,6 @@ header {
   right: 0;
   background-color: #fff;
   border-radius: 10px;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -119,15 +103,13 @@ header {
 
 .header-right input:checked ~ .hamburger:before {
   top: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   width: 30px;
 }
 
 .header-right input:checked ~ .hamburger:after {
   top: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   width: 30px;
 }
 
@@ -139,7 +121,7 @@ header {
     max-width: 200px;
   }
   .hamburger,
-  .toggle_menu {
+.toggle_menu {
     display: block;
   }
   .nav-list {
@@ -159,13 +141,9 @@ header {
     min-width: 100%;
   }
 }
-
 @media screen and (max-width: 767px) {
   .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     position: absolute;
     margin-top: 90px;
     margin-left: 40px;
@@ -181,33 +159,33 @@ header {
   .res {
     font-size: 0.4em;
   }
+  .card2,
+.card3,
+.about_me {
+    flex-wrap: wrap;
+  }
 }
-
 .nav-list {
   text-decoration: none;
   color: #fff;
-  -webkit-transition: all 0.6s, 0.6s;
   transition: all 0.6s, 0.6s;
   position: relative;
 }
 
 .nav-list::before {
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   position: absolute;
   width: 100%;
   height: 0.5px;
   background-color: rgba(255, 255, 255, 0.656);
-  -webkit-transition: 0.2s, 1s;
   transition: 0.2s, 1s;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
 }
 
 .nav-list:hover:before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .nav-list:hover {
@@ -215,12 +193,8 @@ header {
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   text-transform: uppercase;
   list-style: none;
   width: 100%;
@@ -229,7 +203,7 @@ header {
 .header-main {
   text-align: center;
   border: 2px solid rgba(255, 0, 0, 0);
-  background-color: #585757;
+  background-color: rgb(88, 87, 87);
   max-width: 60%;
   margin: auto;
   height: 350px;
@@ -247,23 +221,17 @@ header {
 
 section {
   background-color: #1a1a1a;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 100%;
 }
 
 .about_me {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 4em;
   height: 660px;
   margin-top: 80px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  align-items: center;
+  box-sizing: border-box;
   width: 100%;
 }
 
@@ -299,12 +267,8 @@ section {
 }
 
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   max-width: 80%;
   margin: auto;
 }
@@ -317,14 +281,12 @@ section {
 }
 
 .zoom_card {
-  -webkit-transition: 0.6s, 0.6s;
   transition: 0.6s, 0.6s;
   cursor: pointer;
 }
 
 .zoom_card:hover {
-  -webkit-transform: scale(1.08, 1.08);
-          transform: scale(1.08, 1.08);
+  transform: scale(1.08, 1.08);
   color: #4C70EF;
 }
 
@@ -332,30 +294,22 @@ section {
   font-size: 20px;
   margin-left: 15px;
   margin-right: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .card-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .portfolio {
   width: 100%;
   height: 700px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .custom_cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .custom_card {
@@ -366,13 +320,12 @@ section {
 button {
   background-color: #558FFF;
   border-radius: 8px;
-  border-color: #1a1a1a00;
+  border-color: rgba(26, 26, 26, 0);
   padding: 10px 20px 10px 20px;
   color: #FFFFFF;
   letter-spacing: 1.4px;
   font-family: inherit;
   cursor: pointer;
-  -webkit-transition: all 0.6s, 0.6s;
   transition: all 0.6s, 0.6s;
 }
 
@@ -389,9 +342,7 @@ button:hover {
 .contact {
   width: calc(80% - 3em);
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   padding: 90px 0 80px 0;
 }
@@ -404,9 +355,6 @@ footer {
   border: 2px solid rgba(60, 57, 57, 0);
   background-color: #292C36;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 20px 0 40px 0;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

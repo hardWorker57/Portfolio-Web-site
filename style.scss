@@ -38,25 +38,6 @@ $text_color: #B0ADAD;
 $prime_fsize: 18px;
 $white_text: #FFFFFF;
 
-//responsiveness
-// @media (max-width: 1200px){
-//     container{
-//         max-width: 970px;
-//         font-size: calc(-5px);
-//     }   
-// }
-// @media (max-width: 992px){
-//     container{
-//         max-width: 750px;
-//         font-size: calc(-10px);
-//     }
-// }
-// @media (max-width: 767px){
-//     container {
-//         max-width: none;
-//     }
-// }
-
 //header
 .header {
     display: flex;
@@ -205,6 +186,11 @@ $white_text: #FFFFFF;
     }
     .res {
         font-size: 0.4em;
+    }
+    .card2,
+    .card3,
+    .about_me {
+    flex-wrap: wrap;
     }
 }
 
