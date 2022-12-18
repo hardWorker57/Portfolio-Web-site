@@ -1,10 +1,17 @@
-// let question = +prompt("how many family gays did u see there?");
+let blur = document.getElementById('blur');
 
-// for (let i = 1; i < question; i++) {
-//     if (question < 7) {
-//         alert("tu est gay")
-//     }
-//     else {
-//         alert("fuck u ,tu achete de du etudiants!")
-//     }
+function toggle() {
+    let popup = document.getElementById('popup');
+    blur.classList.toggle('active');
+    popup.classList.toggle('active');
+}
+
+// function burgerMenu() {
+//     let burgerPopup = document.getElementById('burgerPopup');
+//     blur.classList.toggle('active');
+//     burgerPopup.classList.toggle('active');
 // }
+function showBurgerMenu() {
+    let burger_menu = document.getElementById('burger_menu');
+    burger_menu.classList.toggle('active');
+}

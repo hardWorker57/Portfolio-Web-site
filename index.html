@@ -5,114 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio Web-site</title>
+    <title>Portfolio Web-site</title>
 </head>
 <body>
-    
-    <header>
-        <div class="container header">
-            <div class="header-left">
-                <img src="images/logoipsum-282 1.png" alt="" class="img">
-                <div class="header-left-content">
-                 ATABEK
+    <div class="wrapper" id="blur">
+        <header>
+            <div class="container header">
+                <div class="header-left">
+                    <a href="#"><img src="images/logoipsum-282 1.png" alt="" class="img"></a>
+                    <div class="header-left-content">
+                     ATABEK
+                    </div>
+                </div>
+                <div class="header-right">
+                    <input type="checkbox" onclick="showBurgerMenu()" class="toggle_menu">
+                    <div class="hamburger"></div>
+                    <div class="nav">
+                        <a href="#about" class="nav-list">about</a>
+                        <a href="#what_i_do" class="nav-list">what i do</a>
+                        <a href="#portfolio" class="nav-list">work</a>
+                        <a href="#contact" class="nav-list">contact</a>
+                    </div>
+                </div>
+            </div>  
+            <!-- <li class="list_wrap"></li> -->
+            <div class="add-header-container">
+                <div class="header-main">
+                    <div class="header-main-content">
+                        <span class="res">I'm Atabek Jenishbekov</span> <br>
+                        <p class="prime-text">Front-End Development</p>
+                    </div>   
                 </div>
             </div>
-            <div class="header-right">
-                <input type="checkbox" class="toggle_menu">
-                <div class="hamburger"></div>
-                <ul class="nav">
-                    <li><a href="" class="nav-list">about</a></li>
-                    <li><a href="" class="nav-list">what i do</a></li>
-                    <li><a href="" class="nav-list">work</a></li>
-                    <li><a href="" class="nav-list">contact</a></li>
-                </ul>
+        </header>
+        <section id="about">
+            <div class="container">
+                <div class="about_me">
+                    <div class="about_left">
+                        <div class="about_image"><img src="images/about-image.png" alt="about-image" class="image"></div>
+                    </div>
+                    <div class="about_right">
+                        <div class="title text"><span class="res">ABOUT ME</span></div>
+                        <div class="detailed_title"><span class="res">I'm Atabek Jenishbekov</span></div>
+                        <div class="prime-text"><p>Far far away, behind the word mountains, far from the countries <br>Vokalia and Consonantia, there live the blind texts. Separated <br>they live in Bookmarksgrove right at the coast of the Semantics, <br>a large language ocean.</p>
+                        <p>Far far away, behind the word mountains, far from the countries <br>Vokalia and Consonantia, there live the blind texts. Separated <br>they live in Bookmarksgrove right at the coast of the Semantics, <br>a large language ocean.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br><br><br>
+        </section>        
+        <section id="what_i_do">
+            <div class="container">
+                <div class="what_i_do">
+                    <div class="block_content">
+                        <div class="title text"><span class="res">WHAT I DO</span> </div> 
+                        <div class="detailed_title"><span class="res">SPECIALIZING IN</span> </div>
+                    </div> <br> <br> <br>
+                    <div class="cards">
+                        <div class="card__wrapp">
+                            <div class="card zoom_card">
+                                <div class="card-header">
+                                    <div class="img"><img src="images/Frame 1.png" alt="" class="card__image"></div>
+                                    <div class="card-title">Front-End <br> Development</div>
+                                </div>
+                                <div class="prime-text">Lom ipsum dolo, sit amet consectetu adpisicing elit, rem voluptas sed blanditiis</div>    
+                            </div>
+                        </div>
+                        <div class="card__wrapp__custom">
+                            <div class="card zoom_card">
+                                <div class="card-header">
+                                    <div class="img"><img src="images/Frame 2.png" alt="" class="card__image"></div>
+                                    <div class="card-title">UI/UX <br> Designer</div>
+                                </div>
+                                <div class="prime-text">Lom ipsum dolo, sit amet consectetu adpisicing elit, rem voluptas sed blanditiis</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>  
-        <div class="add-header-container">
-            <div class="header-main">
-                <div class="header-main-content">
-                    <span class="res">I'm Atabek Jenishbekov</span> <br>
-                    <p class="prime-text">Front-End Development</p>
-                </div>   
+        </section>
+        <section id="portfolio"> 
+            <div class="container">
+                <div class="portfolio">
+                    <div class="block_content">
+                        <div class="title text"><span class="res">PORTFOLIO</span></div> 
+                        <div class="detailed_title text"><span class="res">LATEST PROJECTS</span></div>
+                    </div> <br> <br> <br>
+                    <div class="custom_cards">
+                        <div class="custom_card">
+                            <img src="images/custom_card1.png" alt="" class="card_image">
+                            <div class="card-title"><span class="res">Need Food App Design</span></div>
+                            <button>View Demo</button>
+                        </div>
+                        <div class="custom_card card2">
+                            <img src="images/custom_card2.png" alt="" class="card_image">
+                            <div class="card-title"><span class="res">Cafe Street Web Design</span></div>
+                            <button>View Demo</button>
+                        </div>
+                        <div class="custom_card card3">
+                            <img src="images/custom_card3.png" alt="" class="card_image">
+                            <div class="card-title"><span class="res">Travel App Design</span></div>
+                            <button>View Demo</button>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
             </div>
-        </div>    
-    </header>
+        </section>        
+        <section id="contact">
+            <div class="contact_container" id="blur1">
+                <div class="contact card">
+                    <div class="detailed_title text"><span class="res">Have any project in mind ?</span></div>
+                    <button onclick="toggle()">Contact me</button>
+                </div>
+            </div> <br> <br> <br> <br> <br>
+        </section>
 
-    <section>
-        <div class="container">
-            <div class="about_me">
-                <div class="about_left">
-                    <div class="about_image"><img src="images/about-image.png" alt="about-image" class="image"></div>
-                </div>
-                <div class="about_right">
-                    <div class="title text"><span class="res">ABOUT ME</span></div>
-                    <div class="detailed_title"><span class="res">I'm Atabek Jenishbekov</span></div>
-                    <div class="prime-text"><p class="responsive">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <p class="responsive">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    </div>
-                </div>
+        <!-- Burger -->
+
+        <div id="burger_menu" class="burger_menu">
+            <div class="nav__burger">
+                <a href="#about" class="burger-list">about</a>
+                <a href="#what_i_do" class="burger-list">what i do</a>
+                <a href="#portfolio" class="burger-list">work</a>
+                <a href="#contact" class="burger-list">contact</a>
             </div>
         </div>
-        <div class="container">
-            <div class="what_i_do">
-                <div class="block_content">
-                    <div class="title text"><span class="res">WHAT I DO</span> </div> 
-                    <div class="detailed_title"><span class="res">SPECIALIZING IN</span> </div>
-                </div> <br> <br> <br>
-                <div class="cards">
-                    <div class="card zoom_card">
-                        <div class="card-header">
-                            <div class="img"><img src="images/Frame 1.png" alt=""></div>
-                            <div class="card-title">Front-End <br> Development</div>
-                        </div>
-                        <div class="prime-text">Lom ipsum dolo, sit amet consectetu adpisicing elit, rem voluptas sed blanditiis</div>    
-                    </div>
-                    <div class="card zoom_card">
-                        <div class="card-header">
-                            <div class="img"><img src="images/Frame 2.png" alt=""></div>
-                            <div class="card-title">UI/UX <br> Designer</div>
-                        </div>
-                        <div class="prime-text">Lom ipsum dolo, sit amet consectetu adpisicing elit, rem voluptas sed blanditiis</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="portfolio">
-                <div class="block_content">
-                    <div class="title text"><span class="res">PORTFOLIO</span></div> 
-                    <div class="detailed_title text"><span class="res">LATEST PROJECTS</span></div>
-                </div> <br> <br> <br>
-                <div class="custom_cards">
-                    <div class="custom_card">
-                        <img src="images/custom_card1.png" alt="" class="card_image">
-                        <div class="card-title"><span class="res">Need Food App Design</span></div>
-                        <button>View Demo</button>
-                    </div>
-                    <div class="custom_card card2">
-                        <img src="images/custom_card2.png" alt="" class="card_image">
-                        <div class="card-title"><span class="res">Cafe Street Web Design</span></div>
-                        <button>View Demo</button>
-                    </div>
-                    <div class="custom_card card3">
-                        <img src="images/custom_card1.png" alt="" class="card_image">
-                        <div class="card-title"><span class="res">Travel App Design</span></div>
-                        <button>View Demo</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container contact_container">
-            <div class="contact card">
-                <div class="detailed_title text"><span class="res">Have any project in mind ?</span></div>
-                <button>Contact me</button>
-            </div>
-        </div> <br> <br> <br> <br> <br>
-    </section> 
-    <footer>
-        <h2 class="detailed_title"><span class="res">LOGO</span></h2>
-        <div class="card-title"><span class="res">COPYRIGHT © 2022 CJ Carl Johnson.</span></div>
-    </footer>
+
+        <!-- Burger -->
+
+        <footer>
+            <h2 class="detailed_title"><span class="res">LOGO</span></h2>
+            <div class="card-title"><span class="res">COPYRIGHT © 2022 CJ Carl Johnson.</span></div>
+        </footer>
+    </div>
+    <div id="popup">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+        <p>Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Molestiae, 
+        ipsum quidem! Consequatur saepe vero tenetur minus. 
+        Magni odio ex illo, saepe quae maiores porro perspiciatis 
+        rem, dolorem, vel itaque placeat sapiente! Eligendi, 
+        magni! Autem excepturi minima quibusdam totam nobis eos?</p>
+        <a href="#contact" onclick="toggle()">Send</a>
+    </div>
+    <!-- <div id="burgerPopup">
+        <a href="#" onclick="burgerMenu()">Send</a>
+    </div> -->
+    
+    
     <script src="script.js"></script>
 </body>
 </html>
