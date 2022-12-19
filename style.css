@@ -62,15 +62,21 @@ header {
   body {
     font-size: 16px;
   }
+  .about_left {
+    margin-inline: auto;
+  }
+  .about_right {
+    margin-inline: auto;
+  }
 }
 @media screen and (max-width: 905px) {
   body {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
   body {
-    font-size: 10px;
+    font-size: 11px;
   }
   .container {
     max-width: 90%;
@@ -293,7 +299,6 @@ section {
   margin-top: 4.5em;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .title {
