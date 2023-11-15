@@ -85,7 +85,7 @@ header {
     display: none;
   }
   .hamburger,
-.toggle_menu {
+  .toggle_menu {
     display: block;
     position: fixed;
     background-color: #1818c5;
@@ -96,6 +96,7 @@ header {
 .header {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(74, 74, 74, 0.3882352941);
 }
 
 .header-left {
@@ -202,7 +203,6 @@ header {
   text-transform: uppercase;
   list-style: none;
   z-index: 3;
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   margin-inline: auto;
@@ -376,6 +376,12 @@ section {
   box-sizing: content-box;
 }
 
+.card_image {
+  max-width: 20em;
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+}
+
 .card-header {
   display: flex;
 }
@@ -445,7 +451,6 @@ footer {
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -463,6 +468,11 @@ footer {
   transition: 0.5s;
   max-width: 70%;
   margin-inline: auto;
+}
+
+#popup textarea {
+  display: flex;
+  margin: 0.7em 0;
 }
 
 #popup.active {
