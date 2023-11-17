@@ -96,13 +96,22 @@ header {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(74, 74, 74, 0.3882352941);
+  position: fixed;
+  min-width: 80%;
+  margin-left: 10%;
+  padding: 0.4em 0 0.4em 1em;
+  background-color: rgba(74, 74, 74, 0.5254901961);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  z-index: 999;
 }
 
 .header-left {
   display: flex;
   width: 50%;
-  gap: 0.6em;
+  gap: 1.5em;
 }
 
 .header-right {
@@ -237,7 +246,7 @@ header {
   width: 100%;
   height: 0.5px;
   background-color: rgba(255, 255, 255, 0.656);
-  transition: 0.2s, 1s;
+  transition: 0.2s, 0.4s;
   transform: scaleX(0);
 }
 
@@ -269,7 +278,6 @@ header {
 .header-main {
   text-align: center;
   border: 2px solid rgba(255, 0, 0, 0);
-  background-color: rgb(88, 87, 87);
   max-width: 60%;
   margin: auto;
   height: 10.4em;
@@ -288,6 +296,10 @@ header {
   flex-direction: column;
 }
 
+.header-main-content p {
+  margin: 0;
+}
+
 section {
   background-color: #1a1a1a;
 }
@@ -299,6 +311,7 @@ section {
   margin-top: 4.5em;
   align-items: center;
   flex-wrap: wrap;
+  margin-inline: auto;
 }
 
 .title {
@@ -365,7 +378,7 @@ section {
 }
 
 .zoom_card:hover {
-  transform: scale(1.08, 1.08);
+  transform: scale(1.05, 1.05);
   color: #4C70EF;
 }
 
@@ -402,6 +415,15 @@ section {
   border-radius: 0.8em;
   margin-top: 20px;
   margin-inline: auto;
+  overflow: hidden;
+}
+
+.custom_card img {
+  transition: all 0.4s ease;
+}
+
+.custom_card img:hover {
+  transform: scale(1.09);
 }
 
 button {
@@ -439,13 +461,71 @@ button:hover {
 }
 
 footer {
+  position: relative;
   border: 2px solid rgba(60, 57, 57, 0);
   background-color: #292C36;
   text-align: center;
   align-items: center;
-  padding: 1.2em 0 2.4em 0;
+  padding: 1.4em 0 2.8em 0;
 }
 
+.line {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.line_1 {
+  z-index: 15;
+  opacity: 0.5;
+}
+
+.line_2 {
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.line_3 {
+  z-index: 5;
+  opacity: 0.5;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+
+.wave_1 {
+  background-size: 50% 80px;
+}
+
+.wave_2 {
+  background-size: 50% 100px;
+  animation: animate 12s linear infinite;
+}
+
+.wave_3 {
+  background-size: 50% 80px;
+  animation: animate 18s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.5);
+  }
+  100% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+}
 .wrapper#blur.active {
   filter: blur(20px);
   pointer-events: none;
