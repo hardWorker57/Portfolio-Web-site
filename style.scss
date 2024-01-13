@@ -94,14 +94,20 @@ $title_color: #4C70EF;
 $text_color: #B0ADAD;
 $white_text: #FFFFFF;
 
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
 //header
 .header {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    align-items: center;
     min-width: 80%;
     margin-left: 10%;
-    padding: 0.4em 0 0.4em 1em;
+    padding: 0 0 0 3em;
     background-color: #4a4a4a86;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -245,12 +251,12 @@ $white_text: #FFFFFF;
     list-style: none;
     width: 100%;
     z-index: 3;
-}
-.nav:hover > .nav-list {
-    opacity: 0.3;
-}
-.nav:hover > .nav-list:hover {
-    opacity: 1;
+    &:hover > .nav-list {
+        opacity: 0.3;
+    }
+    &:hover > .nav-list:hover {
+        opacity: 1;
+    }
 }
 
 .header-main {
@@ -324,7 +330,7 @@ section {
     min-width: 100%;
 }
 .card {
-    padding: 1.1em;
+    padding: 0.6em;
     border-radius: 0.8em;
     background-color: #292C36;
 }
@@ -340,10 +346,10 @@ section {
     transition: 0.6s, 0.6s;
     cursor: pointer;
     margin-bottom: 0.7em;
-    max-width: 22em;
+    max-width: 21em;
 }
 .zoom_card:hover {
-    transform: scale(1.05,1.05);
+    transform: scale(1.04,1.04);
     color: $title_color;
 }
 .card-title {
