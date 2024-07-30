@@ -20,6 +20,8 @@ body {
     font-size: 18px;
 }
 .wrapper {
+    max-width: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -492,6 +494,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 33.3em;
+    max-width: 100%;
     padding: 2.8em;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
     background: blueviolet;
