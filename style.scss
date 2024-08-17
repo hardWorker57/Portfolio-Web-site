@@ -20,10 +20,14 @@ body {
     font-size: 18px;
 }
 .wrapper {
-    max-width: 100%;
+    // width: 100vw;
+    // max-width: 100%;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 header {
     background-image: url(images/Hero-modified.png);

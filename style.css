@@ -21,10 +21,12 @@ body {
 }
 
 .wrapper {
-  max-width: 100%;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 header {
